@@ -1,0 +1,112 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#introducao {
+  background: black url(..//imagens/banner-hero/games/diablo-bg.png) center center no-repeat;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+}
+#introducao #centralizacaoTelaGrande {
+  margin: auto;
+  max-width: 1500px;
+}
+#introducao #centralizacaoTelaGrande #header {
+  border-bottom: solid 0.5px rgb(109, 107, 107);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#introducao #centralizacaoTelaGrande #header #logo-principal {
+  border-bottom: solid 0.5px blue;
+  max-width: 180px;
+}
+#introducao #centralizacaoTelaGrande #header #nav {
+  display: flex;
+  gap: 5px;
+  justify-content: space-around;
+  min-width: 40%;
+}
+#introducao #centralizacaoTelaGrande #header #nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+#introducao #centralizacaoTelaGrande #header #nav a:hover {
+  text-decoration: underline;
+}
+#introducao #centralizacaoTelaGrande #header button {
+  font-weight: bold;
+  transition: 0.3s;
+  width: 130px;
+}
+#introducao #centralizacaoTelaGrande #header #menu-hamburguer {
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+#introducao #centralizacaoTelaGrande #section-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 85vh;
+  gap: 20px;
+}
+#introducao #centralizacaoTelaGrande #section-1 #agrupandoEsquerdaMeio {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#introducao #centralizacaoTelaGrande #section-1 #agrupandoEsquerdaMeio #esquerda {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+#introducao #centralizacaoTelaGrande #section-1 #agrupandoEsquerdaMeio #esquerda .iconeBtn {
+  cursor: pointer;
+  padding: 5px;
+  border: solid 2px white;
+  border-bottom: transparent;
+  border-top: solid 3px;
+  border-radius: 50%;
+}
+#introducao #centralizacaoTelaGrande #section-1 #agrupandoEsquerdaMeio #meio h1 {
+  font-size: 3.5em;
+  font-weight: bolder;
+  max-width: 500px;
+}
+#introducao #centralizacaoTelaGrande #section-1 #agrupandoEsquerdaMeio #meio p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#introducao #centralizacaoTelaGrande #section-1 #agrupandoEsquerdaMeio #meio button {
+  font-weight: bold;
+  transition: 0.3s;
+  width: 130px;
+}
+#introducao #centralizacaoTelaGrande #direita {
+  padding: 10px;
+}
+#introducao #centralizacaoTelaGrande #direita #imgPageVideo {
+  border: solid 2px white;
+}
+
+@media screen and (max-width: 900px) {
+  #introducao #header #logo {
+    margin: 0px 40px;
+  }
+  #introducao #header #nav {
+    display: none;
+  }
+  #introducao #header #menu-hamburguer {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

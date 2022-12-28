@@ -40,10 +40,21 @@
         }
 
         #menu-hamburguer {
-            background-color: red;
             width: 40px;
             height: 40px;
             display: none;
+        }
+        #container-canvas-menu {
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 2em;
+                font-weight: bold;
+                width: 100%;
+            }
+            li {  
+                margin: 10px 0px;
+            }
         }
     }
 
@@ -123,6 +134,10 @@
             }
             #menu-hamburguer {
                 display: block;
+
+                #iconeMenu {
+                    display: block;font-size: 3em;
+                }
             }
         }
 

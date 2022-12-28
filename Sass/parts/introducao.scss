@@ -170,3 +170,24 @@
         }
     }   
 }
+
+
+
+@media screen and (max-width: 365px) {
+    #introducao {
+        #section-1 {
+            #agrupandoEsquerdaMeio {
+                #esquerda {
+                    .iconeBtn {
+                        width: 35px;
+                    }
+                }
+                #meio {
+                    h1 {
+                        font-size: 2.5em;
+                    }
+                }
+            }
+        }
+    }
+}

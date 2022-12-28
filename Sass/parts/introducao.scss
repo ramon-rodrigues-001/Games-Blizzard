@@ -12,8 +12,9 @@
         align-items: center;
 
         #logo-principal {
-            border-bottom: solid .5px blue;
+            border-bottom: solid 1px blue;
             max-width: 180px;
+            padding: 19px 0px;
         }
 
         #nav {
@@ -46,7 +47,6 @@
         }
         #container-canvas-menu {
             a {
-                color: white;
                 text-decoration: none;
                 font-size: 2em;
                 font-weight: bold;
@@ -116,10 +116,25 @@
 }
 
 @media screen and (min-width: 1500px) {
-    #centralizacaoTelaGrande {
-        margin: auto;
-        max-width: 1500px;
+    #introducao {
+        #centralizacaoTelaGrande {
+            font-size: 1.5em;
+            margin: auto;
+            max-width: 1500px;
+
+            #section-1 { 
+                #agrupandoEsquerdaMeio {
+                    #meio {
+                        h1 {
+                            font-size: 3em;
+                            max-width: 800px;
+                        }
+                    }
+                }
+            }
+        }
     }
+    
 }
 
 

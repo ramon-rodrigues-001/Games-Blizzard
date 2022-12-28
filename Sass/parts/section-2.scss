@@ -1,0 +1,59 @@
+#section-2 {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    h2 {
+        border-top: solid 2px blue;
+        font-size: 2.5em;
+        font-weight: bolder;
+        padding: 20px 0px;
+    }
+
+    #div-section2-icones {
+        display: flex;
+        gap: 25px;
+    }
+
+    #div-ver-todos-jogos {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        a {
+            color: rgb(3, 164, 200);
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bolder;
+        }
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    #section-2 {
+        h2 {
+            font-size: 2em;
+        }
+
+        #div-section2-icones {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #section-2 {
+        justify-content: space-evenly;
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        #div-ver-todos-jogos {
+            font-size: .8em;
+        }
+    }
+}

@@ -1,8 +1,18 @@
 // Estilo geral
 @import "./parts/estilo-geral.scss";
 
+
+// Canvas para link Jogo
+@import "./parts/canvas-jogo.scss";
+
+
 // Estilo da primeira parte do site "Introdução"
 @import "parts/introducao.scss";
 
-// Canvas para link Jogo
-@import "./parts/canvas-jogo.scss"
+
+// Section 2 pequena parte preta
+@import "parts/section-2.scss";
+
+
+// Section 3 mais jogos
+@import "parts/section-3.scss";

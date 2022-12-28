@@ -1,0 +1,30 @@
+body {
+    .canvas-jogo {
+        background-color: rgba(0, 0, 0, 0.809);
+        color: white;
+        font-size: .8em;
+        min-height: 60%;
+
+        .btn-close {
+            background-color: white;
+            color: white;
+        }
+
+        #container-de-jogos-canvas {
+            display: flex;
+            padding: 0px 30px;
+
+            .div-jogo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                max-width: 60px;
+
+                &:hover {
+                    background-color: rgb(73, 72, 72);
+                }
+            }
+        }
+    }
+}

@@ -11,64 +11,60 @@
   color: white;
   min-height: 100vh;
 }
-#introducao #centralizacaoTelaGrande {
-  margin: auto;
-  max-width: 1500px;
-}
-#introducao #centralizacaoTelaGrande #header {
+#introducao #header {
   border-bottom: solid 0.5px rgb(109, 107, 107);
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-#introducao #centralizacaoTelaGrande #header #logo-principal {
+#introducao #header #logo-principal {
   border-bottom: solid 0.5px blue;
   max-width: 180px;
 }
-#introducao #centralizacaoTelaGrande #header #nav {
+#introducao #header #nav {
   display: flex;
-  gap: 5px;
+  gap: 3px;
   justify-content: space-around;
   min-width: 40%;
 }
-#introducao #centralizacaoTelaGrande #header #nav a {
+#introducao #header #nav a {
   color: white;
   font-weight: bold;
   text-decoration: none;
 }
-#introducao #centralizacaoTelaGrande #header #nav a:hover {
+#introducao #header #nav a:hover {
   text-decoration: underline;
 }
-#introducao #centralizacaoTelaGrande #header button {
+#introducao #header button {
   font-weight: bold;
   transition: 0.3s;
   width: 130px;
 }
-#introducao #centralizacaoTelaGrande #header #menu-hamburguer {
+#introducao #header #menu-hamburguer {
   background-color: red;
   width: 40px;
   height: 40px;
   display: none;
 }
-#introducao #centralizacaoTelaGrande #section-1 {
+#introducao #section-1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 85vh;
   gap: 20px;
 }
-#introducao #centralizacaoTelaGrande #section-1 #agrupandoEsquerdaMeio {
+#introducao #section-1 #agrupandoEsquerdaMeio {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-#introducao #centralizacaoTelaGrande #section-1 #agrupandoEsquerdaMeio #esquerda {
+#introducao #section-1 #agrupandoEsquerdaMeio #esquerda {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 20px;
 }
-#introducao #centralizacaoTelaGrande #section-1 #agrupandoEsquerdaMeio #esquerda .iconeBtn {
+#introducao #section-1 #agrupandoEsquerdaMeio #esquerda .iconeBtn {
   cursor: pointer;
   padding: 5px;
   border: solid 2px white;
@@ -76,27 +72,33 @@
   border-top: solid 3px;
   border-radius: 50%;
 }
-#introducao #centralizacaoTelaGrande #section-1 #agrupandoEsquerdaMeio #meio h1 {
+#introducao #section-1 #agrupandoEsquerdaMeio #meio h1 {
   font-size: 3.5em;
   font-weight: bolder;
   max-width: 500px;
 }
-#introducao #centralizacaoTelaGrande #section-1 #agrupandoEsquerdaMeio #meio p {
+#introducao #section-1 #agrupandoEsquerdaMeio #meio p {
   font-size: 1.2em;
   font-weight: bold;
 }
-#introducao #centralizacaoTelaGrande #section-1 #agrupandoEsquerdaMeio #meio button {
+#introducao #section-1 #agrupandoEsquerdaMeio #meio button {
   font-weight: bold;
   transition: 0.3s;
   width: 130px;
 }
-#introducao #centralizacaoTelaGrande #direita {
+#introducao #section-1 #direita {
   padding: 10px;
 }
-#introducao #centralizacaoTelaGrande #direita #imgPageVideo {
+#introducao #section-1 #direita #imgPageVideo {
   border: solid 2px white;
 }
 
+@media screen and (min-width: 1500px) {
+  #centralizacaoTelaGrande {
+    margin: auto;
+    max-width: 1500px;
+  }
+}
 @media screen and (max-width: 900px) {
   #introducao #header #logo {
     margin: 0px 40px;
@@ -107,6 +109,56 @@
   #introducao #header #menu-hamburguer {
     display: block;
   }
+  #introducao #section-1 #direita {
+    display: none;
+  }
+  #introducao #section-1 #agrupandoEsquerdaMeio #meio h1 {
+    font-size: 3em;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 585px) {
+  #introducao #header button {
+    display: none;
+  }
+  #introducao #section-1 {
+    padding: 0px 30px;
+  }
+  #introducao #section-1 #agrupandoEsquerdaMeio {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #introducao #section-1 #agrupandoEsquerdaMeio #esquerda {
+    padding: 0px;
+    flex-direction: row;
+  }
+  #introducao #section-1 #agrupandoEsquerdaMeio #esquerda .iconeBtn {
+    width: 50px;
+  }
+}
+body .canvas-jogo {
+  background-color: rgba(0, 0, 0, 0.809);
+  color: white;
+  font-size: 0.8em;
+  min-height: 60%;
+}
+body .canvas-jogo .btn-close {
+  background-color: white;
+  color: white;
+}
+body .canvas-jogo #container-de-jogos-canvas {
+  display: flex;
+  padding: 0px 30px;
+}
+body .canvas-jogo #container-de-jogos-canvas .div-jogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 60px;
+}
+body .canvas-jogo #container-de-jogos-canvas .div-jogo:hover {
+  background-color: rgb(73, 72, 72);
 }
 
 /*# sourceMappingURL=style.css.map */

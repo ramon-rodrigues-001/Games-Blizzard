@@ -94,6 +94,12 @@
                     border-bottom: transparent;
                     border-top: solid 3px;
                     border-radius: 50%;
+
+                    &:hover {
+                        border: solid 2px rgb(255, 0, 0);
+                        border-bottom: transparent;
+                        border-top: solid 3px red;
+                    }
                 }
             }
     
@@ -111,11 +117,18 @@
                     font-weight: bold;
                     transition: .3s;
                     width: 130px;
+                    
+                    border: solid 2px white;
                 }
             }
         } 
 
         #direita {
+            display: flex;
+            flex-direction: column;
+            text-align: end;
+            font-size: 1.1em;
+            font-weight: bold;
             padding: 10px;
             #imgPageVideo {
                 border: solid 2px white;
@@ -123,6 +136,8 @@
         }
     }   
 }
+
+
 
 @media screen and (min-width: 1500px) {
     #introducao {

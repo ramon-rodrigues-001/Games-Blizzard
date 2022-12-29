@@ -120,6 +120,11 @@ body div.espostes {
   border-top: solid 3px;
   border-radius: 50%;
 }
+#introducao #section-1 #agrupandoEsquerdaMeio #esquerda .iconeBtn:hover {
+  border: solid 2px rgb(255, 0, 0);
+  border-bottom: transparent;
+  border-top: solid 3px red;
+}
 #introducao #section-1 #agrupandoEsquerdaMeio #meio h1 {
   font-size: 3.5em;
   font-weight: bolder;
@@ -133,8 +138,14 @@ body div.espostes {
   font-weight: bold;
   transition: 0.3s;
   width: 130px;
+  border: solid 2px white;
 }
 #introducao #section-1 #direita {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  font-size: 1.1em;
+  font-weight: bold;
   padding: 10px;
 }
 #introducao #section-1 #direita #imgPageVideo {
@@ -230,6 +241,11 @@ body div.espostes {
   font-weight: bolder;
 }
 
+@media screen and (min-width: 1300px) {
+  #section-2 {
+    font-size: 1.2em;
+  }
+}
 @media screen and (max-width: 660px) {
   #section-2 h2 {
     font-size: 2em;
@@ -257,7 +273,7 @@ body div.espostes {
 #section-4 {
   background: black url(../imagens/footer-background.png) center center no-repeat;
   background-size: cover;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 #section-4 #centralizacaoTelaGrande-footer {
   display: flex;

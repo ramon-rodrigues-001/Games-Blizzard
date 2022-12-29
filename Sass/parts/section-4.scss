@@ -76,6 +76,10 @@
         #conteudo-texto {
             position: relative;
             z-index: 10;
+            
+            .detalhes {
+                color: rgb(209, 209, 209);
+            }
         }
 
         #ilustration {

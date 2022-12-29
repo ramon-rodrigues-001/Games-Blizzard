@@ -39,6 +39,11 @@ body div.espostes {
   min-height: 50%;
 }
 
+#btn-close {
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
 #introducao {
   background: black url(..//imagens/banner-hero/games/diablo-bg.png) center center no-repeat;
   background-size: cover;
@@ -80,13 +85,13 @@ body div.espostes {
   height: 40px;
   display: none;
 }
-#introducao #header #container-canvas-menu a {
+#introducao #header #offcanvasNavbar #container-canvas-menu a {
   text-decoration: none;
   font-size: 2em;
   font-weight: bold;
   width: 100%;
 }
-#introducao #header #container-canvas-menu li {
+#introducao #header #offcanvasNavbar #container-canvas-menu li {
   margin: 10px 0px;
 }
 #introducao #section-1 {
@@ -313,6 +318,9 @@ body div.espostes {
   #section-4 #conteudo-texto {
     position: relative;
     z-index: 10;
+  }
+  #section-4 #conteudo-texto .detalhes {
+    color: rgb(209, 209, 209);
   }
   #section-4 #ilustration {
     position: absolute;

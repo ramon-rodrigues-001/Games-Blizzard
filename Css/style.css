@@ -79,6 +79,7 @@ body div.espostes {
   font-weight: bold;
   transition: 0.3s;
   width: 130px;
+  border-width: 2px;
 }
 #introducao #header #menu-hamburguer {
   width: 40px;
@@ -125,6 +126,9 @@ body div.espostes {
   border-bottom: transparent;
   border-top: solid 3px red;
 }
+#introducao #section-1 #agrupandoEsquerdaMeio #esquerda .iconeBtn.initial {
+  border-color: red;
+}
 #introducao #section-1 #agrupandoEsquerdaMeio #meio h1 {
   font-size: 3.5em;
   font-weight: bolder;
@@ -138,7 +142,7 @@ body div.espostes {
   font-weight: bold;
   transition: 0.3s;
   width: 130px;
-  border: solid 2px white;
+  border: solid 2px;
 }
 #introducao #section-1 #direita {
   display: flex;

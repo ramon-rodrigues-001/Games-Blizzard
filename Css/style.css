@@ -79,7 +79,7 @@ body div.espostes {
   font-weight: bold;
   transition: 0.3s;
   width: 130px;
-  border-width: 2px;
+  border-width: 1.9px;
 }
 #introducao #header #menu-hamburguer {
   width: 40px;
@@ -122,12 +122,12 @@ body div.espostes {
   border-radius: 50%;
 }
 #introducao #section-1 #agrupandoEsquerdaMeio #esquerda .iconeBtn:hover {
-  border: solid 2px rgb(255, 0, 0);
+  border: solid 2px #ffff00;
   border-bottom: transparent;
-  border-top: solid 3px red;
+  border-top: solid 3px rgb(255, 255, 0);
 }
 #introducao #section-1 #agrupandoEsquerdaMeio #esquerda .iconeBtn.initial {
-  border-color: red;
+  border-color: rgb(255, 255, 0);
 }
 #introducao #section-1 #agrupandoEsquerdaMeio #meio h1 {
   font-size: 3.5em;
@@ -139,10 +139,18 @@ body div.espostes {
   font-weight: bold;
 }
 #introducao #section-1 #agrupandoEsquerdaMeio #meio button {
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: bolder;
   transition: 0.3s;
-  width: 130px;
-  border: solid 2px;
+  width: 160px;
+  border-width: 2px;
+}
+#introducao #section-1 #agrupandoEsquerdaMeio #meio button #icone-Joge-Agora {
+  font-weight: bolder;
+  font-size: 1.15em;
 }
 #introducao #section-1 #direita {
   display: flex;

@@ -42,7 +42,8 @@
             font-weight: bold;
             transition: .3s;
             width: 130px;
-            border-width: 2px;
+
+            border-width: 1.9px;
         }
 
         
@@ -97,13 +98,13 @@
                     border-radius: 50%;
 
                     &:hover {
-                        border: solid 2px rgb(255, 0, 0);
+                        border: solid 2px #ffff00;
                         border-bottom: transparent;
-                        border-top: solid 3px red;
+                        border-top: solid 3px rgb(255, 255, 0);
                     }
 
                     &.initial {
-                        border-color: red;
+                        border-color: rgb(255, 255, 0);
                     }
                 }
             }
@@ -119,11 +120,19 @@
                     font-weight: bold;
                 }
                 button {
-                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    font-weight: bolder;
                     transition: .3s;
-                    width: 130px;
+                    width: 160px;
                     
-                    border: solid 2px;
+                    border-width: 2px;
+                    #icone-Joge-Agora {
+                        font-weight: bolder;
+                        font-size: 1.15em;
+                    }
                 }
             }
         } 

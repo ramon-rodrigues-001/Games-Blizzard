@@ -41,7 +41,7 @@ iconesBtn.forEach(Element => {
         const varelementoClicado = elementoClicado.currentTarget
 
         iconesBtn.forEach(e => e.style.borderColor = '#ffffff')
-        varelementoClicado.style.borderColor = 'red'
+        varelementoClicado.style.borderColor = '#ffff00'
 
         switch (varelementoClicado.id) {
             case 'Diablo-4':

@@ -138,14 +138,25 @@
         } 
 
         #direita {
+            position: relative;
             display: flex;
             flex-direction: column;
             text-align: end;
             font-size: 1.1em;
             font-weight: bold;
             padding: 10px;
+            
             #imgPageVideo {
                 border: solid 2px white;
+                width: 280px;
+                height: 160px;
+            }
+
+            #play {
+                position: absolute;
+                top: 55%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
         }
     }   

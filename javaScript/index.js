@@ -3,14 +3,18 @@ const introducao = document.querySelector('#introducao')
 
 
 class MudarTextos {
-    constructor(titulo, sub_titulo, url, trailer){
+    constructor(titulo, sub_titulo, url, trailer_img, trailer_gif){
         this.titulo = titulo
         this.sub_titulo = sub_titulo
         this.url = url
-        this.trailer = trailer
+        this.trailer_img = trailer_img
+        this.trailer_gif = trailer_gif
+
         this.renderText(this.titulo, this.sub_titulo)
         this.renderImg(this.url)
-        this.renderTrailer(this.trailer)
+        this.renderTrailer_img(this.trailer_img)
+        this.renderTrailer_gif(this.trailer_img, this.trailer_gif)
+
     }
 
     renderText(titulo, sub_titulo) {
@@ -28,11 +32,16 @@ class MudarTextos {
         bg.style.transition = '.5s'
     }
 
-    renderTrailer(src) {
+    renderTrailer_img(src) {
         document.querySelector('#imgPageVideo').src = src
     }
-}
 
+    renderTrailer_gif(src_img, src_gif) {
+        if (src_img) {
+
+        }
+    }
+}
 
 const iconesBtn = document.querySelectorAll('.iconeBtn')
 
@@ -65,4 +74,26 @@ iconesBtn.forEach(Element => {
                 break
         }
     })
+})
+
+
+const trailer = document.querySelector('#imgPageVideo')
+
+trailer.addEventListener('mouseenter', (ev)=>{
+    const elementoAcionado = ev.currentTarget
+
+    
+    switch (elementoAcionado.src) {
+        case "file:///C:/Users/55339/Documents/Programa%C3%A7%C3%A3o/One-Bit-Code/Projetos/Games-Blizzard/imagens/banner-hero/games/diablo-animation-cover.png":
+
+    }
+
+
+    if (elementoAcionado.src === "file:///C:/Users/55339/Documents/Programa%C3%A7%C3%A3o/One-Bit-Code/Projetos/Games-Blizzard/imagens/banner-hero/games/diablo-animation-cover.png") {
+        elementoAcionado.src = "./imagens/banner-hero/games/diablo-animation.gif"
+        document.querySelector('#play').src = "./imagens/banner-hero/icones/play-true.svg"
+    }
+    else {
+        alert(elementoAcionado.src)
+    }
 })

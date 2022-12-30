@@ -153,6 +153,7 @@ body div.espostes {
   font-size: 1.15em;
 }
 #introducao #section-1 #direita {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: end;
@@ -162,6 +163,14 @@ body div.espostes {
 }
 #introducao #section-1 #direita #imgPageVideo {
   border: solid 2px white;
+  width: 280px;
+  height: 160px;
+}
+#introducao #section-1 #direita #play {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 1500px) {

@@ -289,10 +289,19 @@ body div.espostes {
   }
 }
 #section-3 {
-  background-color: black;
-  min-height: 100vh;
+  background: black url(../imagens/Leonardo_Diffusion_Uma_ilustrao_detalhada_enfrenta_o_lobo_ninj_0.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 10px 10px 100px 50px black;
+  min-height: 90vh;
 }
 
+@media screen and (max-width: 660px) {
+  #section-3 {
+    background-image: url(../imagens/Leonardo_Diffusion_Uma_ilustrao_detalhada_enfrenta_o_lobo_ninj_2.jpg);
+    background-position: center left;
+  }
+}
 #section-4 {
   background: black url(../imagens/footer-background.png) center center no-repeat;
   background-size: cover;

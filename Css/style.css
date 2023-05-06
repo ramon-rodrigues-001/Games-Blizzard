@@ -314,6 +314,9 @@ body div.espostes {
   width: 300px;
 }
 #section-3 #container-cards-jogos .cards .background-cards {
+  background-size: cover;
+  box-shadow: inset 0px -100px 200px black;
+  position: relative;
   border: solid 2px white;
   border-radius: 10px;
   width: 300px;
@@ -324,6 +327,20 @@ body div.espostes {
   font-size: 1.3em;
   font-weight: bold;
 }
+#section-3 #container-cards-jogos .cards img {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+#section-3 #container-cards-jogos .cards #img-blizzard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
 
 @media screen and (max-width: 1100px) {
   #section-3 #container-cards-jogos {
@@ -332,20 +349,21 @@ body div.espostes {
 }
 @media screen and (max-width: 700px) {
   #section-3 {
-    background-image: url(../imagens/Leonardo_Diffusion_Uma_ilustrao_detalhada_enfrenta_o_lobo_ninj_2.jpg);
+    background: black;
     background-position: left left;
   }
-  #section-3 #container-cards-jogos {
-    grid-template-columns: 1fr;
-  }
-}
-@media screen and (max-width: 375px) {
   #section-3 #container-cards-jogos .cards {
-    width: 270px;
+    font-size: 0.9em;
+    width: 200px;
   }
   #section-3 #container-cards-jogos .cards .background-cards {
-    width: 270px;
-    height: 400px;
+    width: 200px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 470px) {
+  #section-3 #container-cards-jogos {
+    grid-template-columns: 1fr;
   }
 }
 #section-4 {

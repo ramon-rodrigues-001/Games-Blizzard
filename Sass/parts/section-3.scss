@@ -24,6 +24,9 @@
             width: 300px;
 
             .background-cards {
+                background-size: cover;
+                box-shadow: inset 0px -100px 200px black;
+                position: relative;
                 border: solid 2px white;
                 border-radius: 10px;
                 width: 300px;
@@ -35,6 +38,22 @@
                 font-size: 1.3em;
                 font-weight: bold;
             }
+
+            img {
+                position: absolute;
+                bottom: 30px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 50%;
+            }
+
+            #img-blizzard {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 50%;
+            }
         }
     }
 }
@@ -44,32 +63,34 @@
     #section-3 {
         #container-cards-jogos {
             grid-template-columns: 2fr 2fr;
+
         }
     }
 }
 
 @media screen and (max-width: 700px) {
     #section-3 {
-        background-image: url(../imagens/Leonardo_Diffusion_Uma_ilustrao_detalhada_enfrenta_o_lobo_ninj_2.jpg);
+        background: black;
         background-position: left left;
 
         #container-cards-jogos {
-            grid-template-columns: 1fr;
+            .cards {
+                font-size: .9em;
+                width: 200px;
+    
+                .background-cards {
+                    width: 200px;
+                    height: 300px;
+                }
+            }
         }
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 470px) {
     #section-3 {
         #container-cards-jogos {
-            .cards {
-                width: 270px;
-    
-                .background-cards {
-                    width: 270px;
-                    height: 400px;
-                }
-            }
+            grid-template-columns: 1fr;
         }
     }
 }

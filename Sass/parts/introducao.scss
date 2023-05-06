@@ -150,6 +150,10 @@
                 border: solid 2px white;
                 width: 280px;
                 height: 160px;
+
+                &:hover ~ #play {
+                    z-index: -1;
+                }
             }
 
             #play {

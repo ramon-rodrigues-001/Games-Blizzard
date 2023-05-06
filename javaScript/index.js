@@ -95,31 +95,30 @@ iconesBtn.forEach(Element => {
     })
 })
 
-
 const trailer = document.querySelector('#imgPageVideo')
 
 trailer.addEventListener('mouseenter', (ev)=>{
     const elementoAcionado = ev.currentTarget
 
     switch (elementoAcionado.src) {
-        case "file:///C:/Users/55339/Documents/Programa%C3%A7%C3%A3o/One-Bit-Code/Projetos/Games-Blizzard/imagens/banner-hero/games/diablo-animation-cover.png":
+        case "https://ramon-rodrigues-001.github.io/Games-Blizzard/imagens/banner-hero/games/diablo-animation-cover.png":
             const mudar_trailer = new MudarTextos(null, null, null, null, "./imagens/banner-hero/games/diablo-animation.gif")
             mudar_trailer.renderTrailer_gif(mudar_trailer.trailer_gif)
             break
 
-        case "file:///C:/Users/55339/Documents/Programa%C3%A7%C3%A3o/One-Bit-Code/Projetos/Games-Blizzard/imagens/banner-hero/games/hearthstone-animation-cover.png":
+        case "https://ramon-rodrigues-001.github.io/Games-Blizzard/imagens/banner-hero/games/hearthstone-animation-cover.png":
             const mudar_trailer2 = new MudarTextos(null, null, null, null, "./imagens/banner-hero/games/hearthstone-animation.gif")
             mudar_trailer2.renderTrailer_gif(mudar_trailer2.trailer_gif)
             break
-        case "file:///C:/Users/55339/Documents/Programa%C3%A7%C3%A3o/One-Bit-Code/Projetos/Games-Blizzard/imagens/banner-hero/games/wow-animation-cover.png":
+        case "https://ramon-rodrigues-001.github.io/Games-Blizzard/imagens/banner-hero/games/wow-animation-cover.png":
             const mudar_trailer3 = new MudarTextos(null, null, null, null, "./imagens/banner-hero/games/wow-animation.gif")
             mudar_trailer3.renderTrailer_gif(mudar_trailer3.trailer_gif)
             break
-        case "file:///C:/Users/55339/Documents/Programa%C3%A7%C3%A3o/One-Bit-Code/Projetos/Games-Blizzard/imagens/banner-hero/games/diablo-immortal-animation-cover.png":
+        case "https://ramon-rodrigues-001.github.io/Games-Blizzard/imagens/banner-hero/games/diablo-immortal-animation-cover.png":
             const mudar_trailer4 = new MudarTextos(null, null, null, null, "./imagens/banner-hero/games/diablo-immortal-animation.gif")
             mudar_trailer4.renderTrailer_gif(mudar_trailer4.trailer_gif)
             break
-        case "file:///C:/Users/55339/Documents/Programa%C3%A7%C3%A3o/One-Bit-Code/Projetos/Games-Blizzard/imagens/banner-hero/games/starcraft-2-animation-cover.png":
+        case "https://ramon-rodrigues-001.github.io/Games-Blizzard/imagens/banner-hero/games/starcraft-2-animation-cover.png":
             const mudar_trailer5 = new MudarTextos(null, null, null, null, "./imagens/banner-hero/games/starcraft-2-animation.gif")
             mudar_trailer5.renderTrailer_gif(mudar_trailer5.trailer_gif)
             break
@@ -127,11 +126,11 @@ trailer.addEventListener('mouseenter', (ev)=>{
 })
 
 
-trailer.addEventListener('mouseout', (ev)=>{
+trailer.addEventListener('click', (ev)=>{
     const elementoAcionado = ev.currentTarget
 
     switch (elementoAcionado.src) {
-        case "file:///C:/Users/55339/Documents/Programa%C3%A7%C3%A3o/One-Bit-Code/Projetos/Games-Blizzard/imagens/banner-hero/games/diablo-animation.gif":
+        case "https://ramon-rodrigues-001.github.io/Games-Blizzard/imagens/banner-hero/games/diablo-animation.gif":
             const mudar_trailer = new MudarTextos(null, null, null, "./imagens/banner-hero/games/diablo-animation-cover.png", null)
 
             mudar_trailer.renderTrailer_img(mudar_trailer.trailer_img)

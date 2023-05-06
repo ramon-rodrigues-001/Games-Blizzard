@@ -166,6 +166,9 @@ body div.espostes {
   width: 280px;
   height: 160px;
 }
+#introducao #section-1 #direita #imgPageVideo:hover ~ #play {
+  z-index: -1;
+}
 #introducao #section-1 #direita #play {
   position: absolute;
   top: 55%;

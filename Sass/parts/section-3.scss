@@ -3,12 +3,47 @@
     background-size: cover;
     background-attachment: fixed;
     box-shadow: inset 10px 10px 100px 50px black;
-    min-height: 90vh;
+    min-height: 95vh;
+    border-top: solid 2px white;
+    border-bottom: solid 2px white;
+    padding: 40px 20px;
+
+    #container-cards-jogos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 20px;
+        color: white;
+        width: 100%;
+
+        .cards {
+            font-weight: bold;
+            margin: auto;
+            width: 300px;
+
+            .background-cards {
+                border: solid 2px white;
+                border-radius: 10px;
+                width: 300px;
+                height: 410px;
+            }
+
+            // #card-1 {
+            //     background: url(https://api.brchallenges.com/games/game-1.png) linear-gradient(182.71deg, #020203 2.26%, rgba(2, 2, 3, 0) 73.74%);
+            // }
+
+            h5 {
+                margin: 10px 0px;
+                font-size: 1.3em;
+                font-weight: bold;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 660px) {
     #section-3 {
         background-image: url(../imagens/Leonardo_Diffusion_Uma_ilustrao_detalhada_enfrenta_o_lobo_ninj_2.jpg);
-        background-position: center left;
+        background-position: left left;
     }
 }
